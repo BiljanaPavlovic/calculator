@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Langar&display=swap");
+* {
+  text-align: center;
+  font-family: "Langar", cursive;
+}
+
+.header {
+  text-align: center;
+}
+
+.header .naslov {
+  width: 100%;
+  font-size: 80px;
+  color: violet;
+}
+
+.main {
+  margin-bottom: 200px;
+}
+
+.main .displ {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto 30%;
+      grid-template-columns: auto 30%;
+  width: 30%;
+  margin: auto;
+}
+
+.main .displ #dis {
+  margin: 20px;
+  width: 100%;
+  height: 80px;
+  border: solid 4px;
+  border-radius: 30px;
+  padding: 50px;
+  font-size: 50px;
+}
+
+.main .btn-num {
+  margin: auto;
+  width: 30%;
+  height: 250px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto auto;
+      grid-template-columns: auto auto auto;
+  grid-row: auto auto auto auto;
+  grid-gap: 6px;
+}
+
+.main .btn-num button {
+  border-radius: 50px;
+  padding: 20px;
+  font-size: 50px;
+}
+
+.main .btn-num #jedan {
+  background-color: blueviolet;
+  color: cornsilk;
+}
+
+.main .btn-num #dva {
+  background-color: #da54ad;
+  color: cornsilk;
+}
+
+.main .btn-num #tri {
+  background-color: #38e65e;
+  color: cornsilk;
+}
+
+.main .btn-num #cetiri {
+  background-color: #df791a;
+  color: cornsilk;
+}
+
+.main .btn-num #pet {
+  background-color: #200763;
+  color: cornsilk;
+}
+
+.main .btn-num #sest {
+  background-color: #34bfd1;
+  color: cornsilk;
+}
+
+.main .btn-num #sedam {
+  background-color: #a70b4c;
+  color: cornsilk;
+}
+
+.main .btn-num #osam {
+  background-color: #52ce58;
+  color: cornsilk;
+}
+
+.main .btn-num #devet {
+  background-color: #bd42bd;
+  color: cornsilk;
+}
+
+.main .btn-num #nula {
+  background-color: #cfc421;
+  color: cornsilk;
+}
+
+.main .btn-num #plus {
+  background-color: #74183e;
+  color: cornsilk;
+}
+
+.main .btn-num #minus {
+  background-color: #3c6319;
+  color: cornsilk;
+}
+
+.main .btn-num #puta {
+  background-color: #101661;
+  color: cornsilk;
+}
+
+.main .btn-num #podeljeno {
+  background-color: peachpuff;
+  color: cornsilk;
+}
+
+.main .btn-num #dis-btn {
+  background-color: teal;
+  color: cornsilk;
+}
+
+footer {
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+  background-color: whitesmoke;
+}
+/*# sourceMappingURL=style.css.map */

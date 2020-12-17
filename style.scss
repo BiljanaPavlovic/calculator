@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Langar&display=swap");
+
+* {
+  text-align: center;
+  font-family: "Langar", cursive;
+}
+.header {
+  text-align: center;
+  .naslov {
+    width: 100%;
+    font-size: 80px;
+    color: violet;
+  }
+}
+.main {
+  margin-bottom: 200px;
+  .displ {
+    display: grid;
+    grid-template-columns: auto 30%;
+    width: 30%;
+    margin: auto;
+
+    #dis {
+      margin: 20px;
+      width: 100%;
+      height: 80px;
+      border: solid 4px;
+      border-radius: 30px;
+      padding: 50px;
+      font-size: 50px;
+    }
+  }
+  .btn-num {
+    margin: auto;
+
+    width: 30%;
+    height: 250px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-row: auto auto auto auto;
+    grid-gap: 6px;
+
+    button {
+      border-radius: 50px;
+      padding: 20px;
+      font-size: 50px;
+    }
+    #jedan {
+      background-color: blueviolet;
+      color: cornsilk;
+    }
+    #dva {
+      background-color: rgb(218, 84, 173);
+      color: cornsilk;
+    }
+    #tri {
+      background-color: rgb(56, 230, 94);
+      color: cornsilk;
+    }
+    #cetiri {
+      background-color: rgb(223, 121, 26);
+      color: cornsilk;
+    }
+    #pet {
+      background-color: rgb(32, 7, 99);
+      color: cornsilk;
+    }
+    #sest {
+      background-color: rgb(52, 191, 209);
+      color: cornsilk;
+    }
+    #sedam {
+      background-color: rgb(167, 11, 76);
+      color: cornsilk;
+    }
+    #osam {
+      background-color: rgb(82, 206, 88);
+      color: cornsilk;
+    }
+    #devet {
+      background-color: rgb(189, 66, 189);
+      color: cornsilk;
+    }
+    #nula {
+      background-color: rgb(207, 196, 33);
+      color: cornsilk;
+    }
+    #plus {
+      background-color: rgb(116, 24, 62);
+      color: cornsilk;
+    }
+    #minus {
+      background-color: rgb(60, 99, 25);
+      color: cornsilk;
+    }
+    #puta {
+      background-color: rgb(16, 22, 97);
+      color: cornsilk;
+    }
+    #podeljeno {
+      background-color: peachpuff;
+      color: cornsilk;
+    }
+    #dis-btn {
+      background-color: teal;
+      color: cornsilk;
+    }
+  }
+}
+footer {
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+  background-color: whitesmoke;
+}
