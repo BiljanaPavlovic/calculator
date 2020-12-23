@@ -14,6 +14,7 @@ let puta = document.querySelector('#puta');
 let podeljeno = document.querySelector('#podeljeno');
 let jednako = document.querySelector('#dis-btn');
 let input = document.querySelector('#dis');
+let del = document.querySelector('#del')
 
 
 let output = document.createElement('p')
@@ -154,8 +155,18 @@ function broj() {
         console.log(y)
     }
     )
+
+
+    del.addEventListener('click', () => {
+        input.appendChild(output)
+        location.reload()
+    })
+
+
+
 }
 
 broj()
+
 
 

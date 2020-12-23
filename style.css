@@ -37,6 +37,14 @@
   font-size: 50px;
 }
 
+.main .displ button {
+  border-radius: 50px;
+  padding: 20px;
+  font-size: 50px;
+  width: 100%;
+  margin: 20px;
+}
+
 .main .btn-num {
   margin: auto;
   width: 30%;
