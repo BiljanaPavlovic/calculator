@@ -1,5 +1,3 @@
-
-
 let jedan = document.querySelector('#jedan');
 let dva = document.querySelector('#dva');
 let tri = document.querySelector('#tri');
@@ -107,14 +105,10 @@ function broj() {
         console.log(niz)
     }
     )
-    //}
-    //operatori
-    //function operatori(){
-
 
     plus.addEventListener('click', () => {
         input.appendChild(output)
-        i = output.textContent = '+'
+        i = output.textContent += '+'
         console.log('+')
         niz.push(i)
         console.log(niz)
@@ -122,7 +116,7 @@ function broj() {
     )
     minus.addEventListener('click', () => {
         input.appendChild(output)
-        i = output.textContent = '-'
+        i = output.textContent += '-'
         console.log(0)
         niz.push(i)
         console.log(niz)
@@ -130,7 +124,7 @@ function broj() {
     )
     podeljeno.addEventListener('click', () => {
         input.appendChild(output)
-        i = output.textContent = '/'
+        i = output.textContent += '/'
         console.log(0)
         niz.push(i)
         console.log(niz)
@@ -138,35 +132,30 @@ function broj() {
     )
     puta.addEventListener('click', () => {
         input.appendChild(output)
-        i = output.textContent = '*'
+        i = output.textContent += '*'
         console.log(0)
         niz.push(i)
         console.log(niz)
     }
     )
-    //x = niz.join()
-    //x = String(niz)
-    // console.log(x)
-    // let a = String(output)
-    // console.log(typeof (a))
+
 
     jednako.addEventListener('click', () => {
         input.appendChild(output)
         //menja zareze u stringu za prazan string
-        let x = String(niz).replace(/,/g, "")
+        let x = String(niz[niz.length - 1]).replace(/,/g, "")
         console.log(x)
         console.log(typeof (x))
 
         y = eval(x)
         console.log(niz)
         output.textContent = y
-        // let a = eval(output)
-        //  output.textContent = String(a)
+
         console.log(y)
     }
     )
 }
 
 broj()
-//operatori()
+
 
