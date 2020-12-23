@@ -106,7 +106,6 @@ function broj() {
         niz.push(i)
         console.log(niz)
     }
-
     )
     //}
     //operatori
@@ -143,17 +142,23 @@ function broj() {
         console.log(0)
         niz.push(i)
         console.log(niz)
-        x = i.join("")
-        console.log(x)
     }
     )
+    //x = niz.join()
+    //x = String(niz)
+    // console.log(x)
     // let a = String(output)
     // console.log(typeof (a))
 
     jednako.addEventListener('click', () => {
         input.appendChild(output)
-        y = eval(x)
+        //menja zareze u stringu za prazan string
+        let x = String(niz).replace(/,/g, "")
         console.log(x)
+        console.log(typeof (x))
+
+        y = eval(x)
+        console.log(niz)
         output.textContent = y
         // let a = eval(output)
         //  output.textContent = String(a)
@@ -164,5 +169,4 @@ function broj() {
 
 broj()
 //operatori()
-
 
