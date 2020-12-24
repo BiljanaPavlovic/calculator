@@ -16,22 +16,18 @@ let jednako = document.querySelector('#dis-btn');
 let input = document.querySelector('#dis');
 let del = document.querySelector('#del')
 
-
 let output = document.createElement('p')
 
 function broj() {
 
     let niz = []
     let i
-    let x
     let y
     jedan.addEventListener('click', () => {
         input.appendChild(output)
         i = output.textContent += '1'
         niz.push(i)
         console.log(niz)
-        //        let a = String(output)
-        //  console.log(typeof (a))
     }
     )
     dva.addEventListener('click', () => {
@@ -106,7 +102,6 @@ function broj() {
         console.log(niz)
     }
     )
-
     plus.addEventListener('click', () => {
         input.appendChild(output)
         i = output.textContent += '+'
@@ -139,31 +134,22 @@ function broj() {
         console.log(niz)
     }
     )
-
-
     jednako.addEventListener('click', () => {
         input.appendChild(output)
         //menja zareze u stringu za prazan string
         let x = String(niz[niz.length - 1]).replace(/,/g, "")
         console.log(x)
         console.log(typeof (x))
-
         y = eval(x)
         console.log(niz)
         output.textContent = y
-
         console.log(y)
     }
     )
-
-
     del.addEventListener('click', () => {
         input.appendChild(output)
         location.reload()
     })
-
-
-
 }
 
 broj()
