@@ -12,6 +12,30 @@
   background-color: yellowgreen;
 }
 
+.number h3 {
+  font-size: 50px;
+}
+
+.number #pogodiBroj {
+  margin: 10px;
+  width: 30%;
+  height: 50px;
+  border: solid 4px;
+  border-radius: 30px;
+  padding: 30px;
+  font-size: 30px;
+}
+
+.number button {
+  border-radius: 50px;
+  border: solid 4px;
+  background-color: blueviolet;
+  color: aquamarine;
+  padding: 15px;
+  font-size: 50px;
+  margin: 20px;
+}
+
 .calculator {
   background-color: cornflowerblue;
   height: 1200px;
@@ -77,6 +101,7 @@
 .calculator .main-calc .displ #dis-btn {
   background-color: teal;
   color: cornsilk;
+  padding: 40px;
 }
 
 .calculator .main-calc .btn-num {

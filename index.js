@@ -1,8 +1,18 @@
 //pogodi broj
 let srecniBroj = Math.floor(Math.random() * 11)
 console.log(srecniBroj)
-let pogodiBroj = document.getElementById('pogodiBroj').value
-console.log(pogodiBroj)
+let pogodiBroj = document.querySelector('#pogodiBroj')
+let pogodiBrojDugme = document.querySelector('#pogodiBrojBtn')
+pogodiBrojDugme.addEventListener('click', () => {
+    if (pogodiBroj.value == srecniBroj) {
+        alert('Bravisimo')
+    } else if (pogodiBroj.value > srecniBroj) {
+        alert('Zamisljeni broj je manji od tvog broja.')
+    } else {
+        alert('Zamisljeni broj je veci od tvog broja')
+    }
+})
+
 
 //calculator
 let jedan = document.querySelector('#jedan');
