@@ -10,41 +10,50 @@
 </head>
 
 <body>
-    <header class="header">
-        <h1 class="naslov">Kalkulator</h1>
-    </header>
-    <main class="main">
-
-        <div class="displ">
-            <div class="output" id="dis"></div><br />
-            <button class="dugme" id="del">DEL</button>
-
+    <section class="present">
+        <div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae temporibus suscipit cupiditate, veritatis
+                delectus, consectetur, adipisci id tenetur a dolor voluptatem iusto deleniti. Sapiente rerum velit sit,
+                recusandae dolorum voluptatibus minima saepe inventore aliquid qui necessitatibus similique ad
+                voluptatem mollitia aperiam ea cumque incidunt, nisi nulla nostrum molestias. Officia, quasi.</p>
         </div>
-
-        <div class="btn-num">
-            <button class="dugme" id="jedan">1</button>
-            <button class="dugme" id="dva">2</button>
-            <button class="dugme" id="tri">3</button>
-            <button class="dugme" id="cetiri">4</button>
-            <button class="dugme" id="pet">5</button>
-            <button class="dugme" id="sest">6</button>
-            <button class="dugme" id="sedam">7</button>
-            <button class="dugme" id="osam">8</button>
-            <button class="dugme" id="devet">9</button>
-            <button class="dugme" id="nula">0</button>
-
-
-
-            <button class="dugme" id="plus" data-action="add">+</button>
-            <button class="dugme" id="minus">-</button>
-            <button class="dugme" id="puta">*</button>
-            <button class="dugme" id="podeljeno">/</button>
-            <button class="dugme" id="dis-btn">=</button>
-
-
-
+    </section>
+    <section class="number">
+        <div>
+            <input type="number" placeholder="pogodi broj" id="pogodiBroj">
         </div>
-    </main>
+    </section>
+    <section class="calculator">
+        <headline class="headline">
+            <h1 class="naslov">Kalkulator</h1>
+            </header>
+            <main-calc class="main-calc">
+
+                <div class="displ">
+                    <input type="number" placeholder="Šta misliš koji je rezultat" id="polje" /><br />
+                    <div class="output" id="dis"></div><br />
+                    <button class="dugme" id="del">DEL</button>
+                    <button class="dugme" id="dis-btn">=</button>
+                </div>
+                <div class="btn-num">
+                    <button class="dugme" id="jedan">1</button>
+                    <button class="dugme" id="dva">2</button>
+                    <button class="dugme" id="tri">3</button>
+                    <button class="dugme" id="cetiri">4</button>
+                    <button class="dugme" id="pet">5</button>
+                    <button class="dugme" id="sest">6</button>
+                    <button class="dugme" id="sedam">7</button>
+                    <button class="dugme" id="osam">8</button>
+                    <button class="dugme" id="devet">9</button>
+                    <button class="dugme" id="nula">0</button>
+
+                    <button class="dugme" id="plus" data-action="add">+</button>
+                    <button class="dugme" id="minus">-</button>
+                    <button class="dugme" id="puta">*</button>
+                    <button class="dugme" id="podeljeno">/</button>
+                </div>
+            </main-calc>
+    </section>
     <!--   
 
         <footer>&copy;Biljana Pavlovic 2020.</footer>

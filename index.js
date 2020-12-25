@@ -1,3 +1,10 @@
+//pogodi broj
+let srecniBroj = Math.floor(Math.random() * 11)
+console.log(srecniBroj)
+let pogodiBroj = document.getElementById('pogodiBroj').value
+console.log(pogodiBroj)
+
+//calculator
 let jedan = document.querySelector('#jedan');
 let dva = document.querySelector('#dva');
 let tri = document.querySelector('#tri');
@@ -15,7 +22,7 @@ let podeljeno = document.querySelector('#podeljeno');
 let jednako = document.querySelector('#dis-btn');
 let input = document.querySelector('#dis');
 let del = document.querySelector('#del')
-
+let unos = document.querySelector('#polje')
 let output = document.createElement('p')
 
 function broj() {
@@ -141,9 +148,17 @@ function broj() {
         console.log(x)
         console.log(typeof (x))
         y = eval(x)
+
         console.log(niz)
         output.textContent = y
         console.log(y)
+        console.log(unos.value)
+        console.log(typeof (unos.value))
+        if (y == unos.value) {
+            alert('Bravooooo');
+        } else {
+            alert('Možda da probaš ponovo');
+        }
     }
     )
     del.addEventListener('click', () => {

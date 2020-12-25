@@ -2,24 +2,36 @@
 * {
   text-align: center;
   font-family: "Langar", cursive;
-  background-color: cornflowerblue;
 }
 
-.header {
+.present {
+  background-color: aqua;
+}
+
+.number {
+  background-color: yellowgreen;
+}
+
+.calculator {
+  background-color: cornflowerblue;
+  height: 1200px;
+}
+
+.calculator .headline {
   text-align: center;
 }
 
-.header .naslov {
+.calculator .headline .naslov {
   width: 100%;
   font-size: 80px;
-  color: violet;
+  color: #151781;
 }
 
-.main {
+.calculator .main-calc {
   margin-bottom: 500px;
 }
 
-.main .displ {
+.calculator .main-calc .displ {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: auto 30%;
@@ -28,27 +40,46 @@
   margin: auto;
 }
 
-.main .displ #dis {
+.calculator .main-calc .displ #dis {
+  margin: 10px;
   width: 100%;
-  height: 80px;
+  height: 50px;
   border: solid 4px;
   border-radius: 30px;
   padding: 30px;
   font-size: 50px;
 }
 
-.main .displ button {
+.calculator .main-calc .displ #dis p {
+  margin: 5px;
+}
+
+.calculator .main-calc .displ #polje {
+  margin: 10px;
+  width: 100%;
+  height: 50px;
+  border: solid 4px;
+  border-radius: 30px;
+  padding: 30px;
+  font-size: 30px;
+}
+
+.calculator .main-calc .displ button {
   border-radius: 50px;
   border: solid 4px;
   background-color: blueviolet;
   color: aquamarine;
-  padding: 20px;
+  padding: 15px;
   font-size: 50px;
-  width: 100%;
   margin: 20px;
 }
 
-.main .btn-num {
+.calculator .main-calc .displ #dis-btn {
+  background-color: teal;
+  color: cornsilk;
+}
+
+.calculator .main-calc .btn-num {
   margin: auto;
   width: 30%;
   height: 250px;
@@ -60,93 +91,80 @@
   grid-gap: 6px;
 }
 
-.main .btn-num button {
+.calculator .main-calc .btn-num button {
   border-radius: 50px;
   padding: 15px;
   font-size: 30px;
+  border: solid 5px;
 }
 
-.main .btn-num #jedan {
+.calculator .main-calc .btn-num #jedan {
   background-color: blueviolet;
   color: cornsilk;
 }
 
-.main .btn-num #dva {
+.calculator .main-calc .btn-num #dva {
   background-color: #da54ad;
   color: cornsilk;
 }
 
-.main .btn-num #tri {
+.calculator .main-calc .btn-num #tri {
   background-color: #38e65e;
   color: cornsilk;
 }
 
-.main .btn-num #cetiri {
+.calculator .main-calc .btn-num #cetiri {
   background-color: #df791a;
   color: cornsilk;
 }
 
-.main .btn-num #pet {
+.calculator .main-calc .btn-num #pet {
   background-color: #200763;
   color: cornsilk;
 }
 
-.main .btn-num #sest {
+.calculator .main-calc .btn-num #sest {
   background-color: #34bfd1;
   color: cornsilk;
 }
 
-.main .btn-num #sedam {
+.calculator .main-calc .btn-num #sedam {
   background-color: #a70b4c;
   color: cornsilk;
 }
 
-.main .btn-num #osam {
+.calculator .main-calc .btn-num #osam {
   background-color: #52ce58;
   color: cornsilk;
 }
 
-.main .btn-num #devet {
+.calculator .main-calc .btn-num #devet {
   background-color: #bd42bd;
   color: cornsilk;
 }
 
-.main .btn-num #nula {
+.calculator .main-calc .btn-num #nula {
   background-color: #cfc421;
   color: cornsilk;
 }
 
-.main .btn-num #plus {
+.calculator .main-calc .btn-num #plus {
   background-color: #74183e;
   color: cornsilk;
 }
 
-.main .btn-num #minus {
+.calculator .main-calc .btn-num #minus {
   background-color: #3c6319;
   color: cornsilk;
 }
 
-.main .btn-num #puta {
+.calculator .main-calc .btn-num #puta {
   background-color: #101661;
   color: cornsilk;
 }
 
-.main .btn-num #podeljeno {
+.calculator .main-calc .btn-num #podeljeno {
   background-color: peachpuff;
   color: cornsilk;
-}
-
-.main .btn-num #dis-btn {
-  background-color: teal;
-  color: cornsilk;
-}
-
-footer {
-  padding: 10px;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  height: 50px;
-  background-color: whitesmoke;
 }
 /*# sourceMappingURL=style.css.map */
