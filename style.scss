@@ -15,8 +15,10 @@ body {
     rgba(42, 204, 246, 1) 0%,
     rgba(8, 69, 164, 1) 100%
   );
-  color: goldenrod;
+  margin: 10px;
+  padding: 50px;
   h1 {
+    color: goldenrod;
     font-size: 50px;
   }
   .present {
@@ -102,8 +104,16 @@ body {
 //pogodi broj
 .number {
   background-color: yellowgreen;
+  height: 600px;
+  padding: 100px;
+  margin: 10px;
+  h2 {
+    font-size: 45px;
+    color: aquamarine;
+  }
   h3 {
-    font-size: 50px;
+    font-size: 40px;
+    color: aquamarine;
   }
   #pogodiBroj {
     margin: 10px;
@@ -114,13 +124,17 @@ body {
     padding: 30px;
     font-size: 30px;
   }
+  p {
+    font-size: 40px;
+    color: aqua;
+  }
   button {
     border-radius: 50px;
     border: solid 4px;
     background-color: blueviolet;
     color: aquamarine;
     padding: 15px;
-    font-size: 50px;
+    font-size: 40px;
     margin: 20px;
   }
 }
@@ -132,19 +146,24 @@ body {
     text-align: center;
     .naslov {
       width: 100%;
-      font-size: 80px;
+      font-size: 50px;
       color: rgb(21, 23, 129);
     }
   }
   .main-calc {
+    margin: 10px;
     margin-bottom: 500px;
+    padding: 100px;
 
     .displ {
       display: grid;
       grid-template-columns: auto 30%;
       width: 30%;
       margin: auto;
-
+      p {
+        color: rgb(21, 23, 129);
+        font-size: 40px;
+      }
       #dis {
         margin: 10px;
         width: 100%;
@@ -251,9 +270,41 @@ body {
         color: cornsilk;
       }
       #podeljeno {
-        background-color: peachpuff;
+        background-color: rgb(139, 72, 13);
         color: cornsilk;
       }
     }
+  }
+}
+.pcs {
+  background-color: orangered;
+  color: yellowgreen;
+  margin: 10px;
+  padding: 100px;
+  .okvir {
+    border: solid 20px yellowgreen;
+    height: 600px;
+    width: 600px;
+    margin: auto;
+
+    img {
+      height: 600px;
+      width: 600px;
+      clip-path: polygon(
+        50% 0%,
+        61% 35%,
+        98% 35%,
+        68% 57%,
+        79% 91%,
+        50% 70%,
+        21% 91%,
+        32% 57%,
+        2% 35%,
+        39% 35%
+      );
+    }
+  }
+  .okvir :hover {
+    clip-path: circle(50% at 50% 50%);
   }
 }

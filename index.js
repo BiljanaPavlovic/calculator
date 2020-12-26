@@ -2,16 +2,31 @@
 let srecniBroj = Math.floor(Math.random() * 11)
 console.log(srecniBroj)
 let pogodiBroj = document.querySelector('#pogodiBroj')
+let porukaSrecanBroj = document.querySelector('.porukaSrecanBroj')
+let liPSB = document.createElement('p')
+
 let pogodiBrojDugme = document.querySelector('#pogodiBrojBtn')
 pogodiBrojDugme.addEventListener('click', () => {
     if (pogodiBroj.value == srecniBroj) {
-        alert('Bravisimo')
+        liPSB.textContent = 'Брависимоооо'
     } else if (pogodiBroj.value > srecniBroj) {
-        alert('Zamisljeni broj je manji od tvog broja.')
+        liPSB.textContent = 'Замишљени број је мањи од твог броја.'
+
     } else {
-        alert('Zamisljeni broj je veci od tvog broja')
+        liPSB.textContent = 'Замишљени број је већи од твог броја.'
+
     }
 })
+let pogodiBrojNI = document.querySelector('#pogodiBrojNI')
+pogodiBrojNI.addEventListener('click', () => {
+    location.reload()
+
+})
+let pogodiBrojPB = document.querySelector('#pogodiBrojPB')
+pogodiBrojPB.addEventListener('click', () => {
+    liPSB.textContent = 'Замишљени број је:' + " " + srecniBroj
+})
+porukaSrecanBroj.appendChild(liPSB)
 
 
 //calculator
@@ -34,7 +49,8 @@ let input = document.querySelector('#dis');
 let del = document.querySelector('#del')
 let unos = document.querySelector('#polje')
 let output = document.createElement('p')
-
+let porukaKalkulator = document.querySelector('.porukaKalkulator')
+let porukaRezultat = document.createElement('p')
 function broj() {
 
     let niz = []
@@ -165,10 +181,14 @@ function broj() {
         console.log(unos.value)
         console.log(typeof (unos.value))
         if (y == unos.value) {
-            alert('Bravooooo');
+            //alert('Bravooooo');
+            porukaRezultat.textContent = 'Бравооо погодааак!'
         } else {
-            alert('Možda da probaš ponovo');
+            //alert('Možda da probaš ponovo');
+            porukaRezultat.textContent = 'Можда да покушаш поново.'
+
         }
+        porukaKalkulator.appendChild(porukaRezultat)
     }
     )
     del.addEventListener('click', () => {

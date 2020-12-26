@@ -12,11 +12,13 @@ body {
   height: 650px;
   background: #2accf6;
   background: radial-gradient(circle, #2accf6 0%, #0845a4 100%);
-  color: goldenrod;
+  margin: 10px;
+  padding: 50px;
   /* hover effects */
 }
 
 .present-div h1 {
+  color: goldenrod;
   font-size: 50px;
 }
 
@@ -118,10 +120,19 @@ body {
 
 .number {
   background-color: yellowgreen;
+  height: 600px;
+  padding: 100px;
+  margin: 10px;
+}
+
+.number h2 {
+  font-size: 45px;
+  color: aquamarine;
 }
 
 .number h3 {
-  font-size: 50px;
+  font-size: 40px;
+  color: aquamarine;
 }
 
 .number #pogodiBroj {
@@ -134,13 +145,18 @@ body {
   font-size: 30px;
 }
 
+.number p {
+  font-size: 40px;
+  color: aqua;
+}
+
 .number button {
   border-radius: 50px;
   border: solid 4px;
   background-color: blueviolet;
   color: aquamarine;
   padding: 15px;
-  font-size: 50px;
+  font-size: 40px;
   margin: 20px;
 }
 
@@ -155,12 +171,14 @@ body {
 
 .calculator .headline .naslov {
   width: 100%;
-  font-size: 80px;
+  font-size: 50px;
   color: #151781;
 }
 
 .calculator .main-calc {
+  margin: 10px;
   margin-bottom: 500px;
+  padding: 100px;
 }
 
 .calculator .main-calc .displ {
@@ -170,6 +188,11 @@ body {
       grid-template-columns: auto 30%;
   width: 30%;
   margin: auto;
+}
+
+.calculator .main-calc .displ p {
+  color: #151781;
+  font-size: 40px;
 }
 
 .calculator .main-calc .displ #dis {
@@ -297,7 +320,33 @@ body {
 }
 
 .calculator .main-calc .btn-num #podeljeno {
-  background-color: peachpuff;
+  background-color: #8b480d;
   color: cornsilk;
+}
+
+.pcs {
+  background-color: orangered;
+  color: yellowgreen;
+  margin: 10px;
+  padding: 100px;
+}
+
+.pcs .okvir {
+  border: solid 20px yellowgreen;
+  height: 600px;
+  width: 600px;
+  margin: auto;
+}
+
+.pcs .okvir img {
+  height: 600px;
+  width: 600px;
+  -webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+          clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+}
+
+.pcs .okvir :hover {
+  -webkit-clip-path: circle(50% at 50% 50%);
+          clip-path: circle(50% at 50% 50%);
 }
 /*# sourceMappingURL=style.css.map */
