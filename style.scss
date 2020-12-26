@@ -151,10 +151,6 @@ body {
     }
   }
   .main-calc {
-    margin: 10px;
-    margin-bottom: 500px;
-    padding: 100px;
-
     .displ {
       display: grid;
       grid-template-columns: auto 30%;
@@ -208,7 +204,7 @@ body {
       display: grid;
       grid-template-columns: auto auto auto;
       grid-row: auto auto auto auto;
-      grid-gap: 6px;
+      grid-gap: 10px;
 
       button {
         border-radius: 50px;

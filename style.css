@@ -175,12 +175,6 @@ body {
   color: #151781;
 }
 
-.calculator .main-calc {
-  margin: 10px;
-  margin-bottom: 500px;
-  padding: 100px;
-}
-
 .calculator .main-calc .displ {
   display: -ms-grid;
   display: grid;
@@ -244,7 +238,7 @@ body {
   -ms-grid-columns: auto auto auto;
       grid-template-columns: auto auto auto;
   grid-row: auto auto auto auto;
-  grid-gap: 6px;
+  grid-gap: 10px;
 }
 
 .calculator .main-calc .btn-num button {
