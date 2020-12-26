@@ -192,7 +192,7 @@ body {
 
 .calculator .main-calc .displ p {
   color: #151781;
-  font-size: 40px;
+  font-size: 30px;
 }
 
 .calculator .main-calc .displ #dis {
@@ -348,5 +348,15 @@ body {
 .pcs .okvir :hover {
   -webkit-clip-path: circle(50% at 50% 50%);
           clip-path: circle(50% at 50% 50%);
+}
+
+@media (max-width: 768px) {
+  body {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+    width: 100%;
+  }
 }
 /*# sourceMappingURL=style.css.map */

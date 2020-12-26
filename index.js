@@ -138,7 +138,7 @@ function broj() {
     plus.addEventListener('click', () => {
         input.appendChild(output)
         i = output.textContent += '+'
-        console.log('+')
+
         niz.push(i)
         console.log(niz)
     }

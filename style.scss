@@ -162,7 +162,7 @@ body {
       margin: auto;
       p {
         color: rgb(21, 23, 129);
-        font-size: 40px;
+        font-size: 30px;
       }
       #dis {
         margin: 10px;
@@ -306,5 +306,12 @@ body {
   }
   .okvir :hover {
     clip-path: circle(50% at 50% 50%);
+  }
+}
+@media (max-width: 768px) {
+  body {
+    display: grid;
+    grid-template-columns: auto;
+    width: 100%;
   }
 }
